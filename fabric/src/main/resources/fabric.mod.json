@@ -1,47 +1,47 @@
 {
   "schemaVersion": 1,
-  "id": "${mod_id}",
-  "version": "${version}",
-  "name": "${mod_name}",
-  "description": "${mod_description}",
+  "id": "tipoftheloom",
+  "version": "26.1.2.0",
+  "name": "TipOfTheLoom",
+  "description": "Adds tooltips to banner pattern buttons in the loom.",
   "authors": [
-    "${mod_author}"
+    "Darkhax"
   ],
   "contributors": [
     "This project is made possible with Patreon support from players like you. Thank you!",
-    "${patreon_pledges}"
+    "lothrazar, techsquirrel, Keyana , Darkosto, Tobias Ward, noobanidus"
   ],
   "contact": {
-    "sources": "${mod_repo}",
-    "issues": "${mod_repo}/issues",
-    "homepage": "${curse_page}"
+    "sources": "https://github.com/Darkhax-Minecraft/Tip-of-the-Loom",
+    "issues": "https://github.com/Darkhax-Minecraft/Tip-of-the-Loom/issues",
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/tip-of-the-loom"
   },
-  "license": "${mod_license}",
-  "icon": "logo_${mod_id}.png",
-  "environment": "${mod_target_environment}",
+  "license": "LGPL 2.1",
+  "icon": "logo_tipoftheloom.png",
+  "environment": "client",
   "entrypoints": {
     "main": [
-      "net.darkhax.tipoftheloom.fabric.impl.FabricMod"
+      "net.darkhax.tipoftheloom.fabric.TipOfTheLoomFabric"
+    ],
+    "client": [
+      "net.darkhax.tipoftheloom.fabric.TipOfTheLoomFabricClient"
     ]
   },
   "mixins": [
-    "${mod_id}.mixins.json",
-    "${mod_id}.fabric.mixins.json"
+    "tipoftheloom.common.mixins.json",
+    "tipoftheloom.fabric.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=${fabric_loader_version}",
+    "fabricloader": ">=0.18.6",
     "fabric-api": "*",
-    "minecraft": "${minecraft_version}",
-    "java": ">=${java_version}",
-    "bookshelf": ">=${bookshelf_version}",
-    "prickle": ">=${prickle_version}"
+    "minecraft": ">=26.1",
+    "java": ">=25"
   },
   "custom": {
     "modmenu": {
       "links": {
-        "modmenu.curseforge": "${curse_page}",
-        "modmenu.modrinth": "${modrinth_page}",
-        "modmenu.patreon": "${patreon_url}?${mod_id}"
+        "modmenu.curseforge": "https://www.curseforge.com/minecraft/mc-mods/tip-of-the-loom",
+        "modmenu.modrinth": "https://modrinth.com/mod/tip-of-the-loom"
       }
     }
   }
