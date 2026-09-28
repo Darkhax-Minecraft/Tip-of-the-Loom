@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "tipoftheloom",
-  "version": "26.2.0.0",
+  "version": "26.3.0.0",
   "name": "TipOfTheLoom",
   "description": "Adds tooltips to banner pattern buttons in the loom.",
   "authors": [
@@ -9,7 +9,7 @@
   ],
   "contributors": [
     "This project is made possible with Patreon support from players like you. Thank you!",
-    "lothrazar, techsquirrel, Keyana , Darkosto, Tobias Ward, noobanidus"
+    "lothrazar, techsquirrel, Tobias Ward, noobanidus"
   ],
   "contact": {
     "sources": "https://github.com/Darkhax-Minecraft/Tip-of-the-Loom",
@@ -32,9 +32,9 @@
     "tipoftheloom.fabric.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.19.3",
+    "fabricloader": ">=0.19.5",
     "fabric-api": "*",
-    "minecraft": ">=26.2",
+    "minecraft": ">=26.3",
     "java": ">=25",
     "bookshelf": "*",
     "prickle": "*"
